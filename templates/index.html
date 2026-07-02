@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome — FlaskApp{% endblock %}
+
+{% block main_class %}wide{% endblock %}
+
+{% block content %}
+<section class="hero-section">
+    <div class="hero-content">
+        <div class="hero-badge">
+            <i class="bi bi-stars"></i> Modern Flask Application
+        </div>
+
+        <h1 class="hero-title">Welcome to Flask</h1>
+
+        <p class="hero-subtitle">
+            A beautifully crafted authentication platform built with Flask.
+            Secure, fast, and ready for you to get started in seconds.
+        </p>
+
+        <div class="hero-actions">
+            <a href="{{ url_for('register') }}" class="btn-app btn-primary-app">
+                <i class="bi bi-person-plus-fill"></i> Get Started
+            </a>
+            <a href="{{ url_for('login') }}" class="btn-app btn-outline-app">
+                <i class="bi bi-box-arrow-in-right"></i> Sign In
+            </a>
+        </div>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="feature-icon purple">
+                    <i class="bi bi-shield-lock-fill"></i>
+                </div>
+                <h3>Secure Auth</h3>
+                <p>Password hashing and session-based authentication keep your data safe.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon blue">
+                    <i class="bi bi-database-fill"></i>
+                </div>
+                <h3>Database Ready</h3>
+                <p>SQLAlchemy integration for seamless user management and storage.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon green">
+                    <i class="bi bi-lightning-charge-fill"></i>
+                </div>
+                <h3>Lightning Fast</h3>
+                <p>Optimized Flask backend with a modern, responsive frontend experience.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
