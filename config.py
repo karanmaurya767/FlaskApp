@@ -1,3 +1,12 @@
+# class Config:
+#     SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:CdBnaxGcyrmtORIlFCJxPFivvOdNBVDb@thomas.proxy.rlwy.net:49527/railway"
+
+#     SQLALCHEMY_TRACK_MODIFICATIONS = False
+#     SECRET_KEY = "00110101"
+
+
+
+
 import os
 
 class Config:
